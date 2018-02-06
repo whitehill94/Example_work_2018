@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Voyage Ministries -- Contact Us</title>
+	<meta name="Contact us" content="">
+	<meta name="Jamison Whitehill" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/style.css">
+
+    <!-- JS
+  ================================================== -->
+    <script src="js/jquery-1.8.2.min.js" type="text/javascript"></script> <!-- jQuery -->
+	<script src="js/jquery.easing.1.3.js" type="text/javascript"></script> <!-- jQuery easing -->
+	<script src="js/modernizr.custom.js" type="text/javascript"></script> <!-- Modernizr -->
+    <script src="js/jquery-ui-1.10.1.custom.min.js" type="text/javascript"></script> <!-- tabs, toggles, accordion -->
+    <script src="js/custom.js" type="text/javascript"></script> <!-- jQuery initialization -->
+  
+    <!-- Responsive Menu -->
+    <script src="js/jquery.meanmenu.js"></script> 
+    <script>
+    jQuery(document).ready(function () {
+    jQuery('header nav').meanmenu();
+    });
+    </script>
+	
+	<!-- Ajax Contact Form JS -->
+	<script type="text/javascript" src="js/jquery.ajax-contact-form.js"></script>	
+	
+	<!-- Tooltip -->
+    <script src="js/tooltip.js"></script>
+
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicons/favicon.ico">
+	<link rel="apple-touch-icon" href="favicons/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-touch-icon-114x114.png">
+
+</head>
+<body>
+   
+<header class="header">
+<div class="container">
+<div class="four columns">
+<h1 class="logo"><a href="index.html"><img src="images/Voyage.jpg" alt="Voyage Ministries" /></a></h1>
+</div><!-- logo -->
+
+<div class="twelve columns">
+<nav class="main_menu">
+
+<ul>
+<li>
+<a href="index.html">
+Voyage
+<div class="sub">
+Home
+</div>
+</a>
+</li>
+
+<li>
+<a href="about_us.html">
+About us
+<div class="sub">
+About Voyage
+</div>
+</a>
+<ul>
+<li><a href="faq.html">FAQ</a></li>
+<li><a href="about_us.html">About Us</a></li>
+<li><a href="the_gospel.html">The Gospel</a></li>
+
+<li><a href="narrative.html">Narrative</a></li>
+</ul>
+</li>
+
+<li>
+<a href="events.html">
+Events
+<div class="sub">
+Events Page
+</div>
+</a>
+</li>
+
+<li class="current_page_item">
+<a href="contact.html">
+Contact US
+<div class="sub">
+Contact Voyage Ministries
+</div>
+</a>
+</li>
+</ul>
+
+</nav><!-- navigation -->
+</div>
+<div class="clearfix"></div>
+</div>
+</header><!-- header -->
+
+<div class="container">
+<div class="sixteen columns page-title">
+<div class="eight columns alpha">
+<h3> <span>Contact Us</span> </h3>
+</div>
+<div class="eight columns omega">
+<nav class="breadcrumbs">
+<ul>
+<li>You are here:</li>
+<li>
+<a href="index.html">Home</a>
+</li>
+<li>Contact Us</li>
+</ul>
+</nav>
+</div>
+<div class="clearfix"></div>
+</div><!-- page-title -->
+</div><!-- container -->
+
+<div class="container">
+
+	<!-- begin google map --> 
+			<div class="sixteen columns google-map">
+				<div id="map_canvas" class="full-shadow" style="width: 100%; padding-top: 40%;">
+				</div>
+                <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=true"></script>
+				<script src="js/jquery.gmap.min.js"></script>
+				<script>
+					jQuery('#map_canvas').gMap({
+						maptype: 'ROADMAP',
+						scrollwheel: false,
+						zoom: 18,
+						markers: [
+							{
+								address: '65-1111A Church Rd Waimea, HI 96743‎', // Your Adress Here
+								html: '',
+								popup: false,
+							}
+						],
+					});
+				</script>
+			</div>
+    <!-- end google map -->
+	
+            <div class="clearfix"></div>
+
+		
+	        <!-- begin main -->
+            <div class="twelve columns">
+            <!-- begin contact form -->
+            <h4 class="headline">Contact Us</h4>
+            <p>We would be glad to hear from you.</p>
+
+		<!--
+		#########################################
+			- Ajax Contact Form / Start -
+		#########################################
+		-->
+		<div class="ajax-contact-form">
+			<div class="form">
+			
+				<div class="form-holder">
+					<div class="notification canhide"></div>	
+										
+					<form id="frm_contact" name="frm_contact" action="contact.php" method="post">
+						
+						<div class="field">
+							<label for="name">First Name &amp; Last Name <span class="required">*</span></label>
+							<div class="inputs">
+								<input class="aweform" type="text" id="name" name="name" />
+							</div>  
+						</div>
+						
+						<div class="field">
+							<label for="email">E-mail Address <span class="required">*</span></label>
+							<div class="inputs">
+								<input class="aweform" type="text" id="email" name="email" />
+							</div>  
+						</div>
+						
+						<div class="field">
+							<label for="phone">Phone <span class="required">*</span></label>
+							<div class="inputs">
+								<input class="aweform small" type="text" id="phone" name="phone" />
+							</div>  
+						</div>
+						
+						<div class="field">
+							<label for="subject">Subject</label>
+							<div class="inputs">
+								<select class="aweform" id="subject" name="subject">
+									<option value="General">General</option>
+									<option value="Prayer Request">Prayer Request</option>
+									<option value="Information">Information</option>
+								</select>
+							</div>  
+						</div>
+						
+						<div class="field">
+							<label for="message">Message <span class="required">*</span></label>
+							<div class="inputs">
+								<textarea class="aweform" id="message" name="message" rows="30" cols="5"></textarea>
+							</div>  
+						</div>
+						
+						<div class="field">
+							<label for="verify">Are you human? <span class="required">*</span></label>
+							<div class="inputs">
+								<div class="captcha">
+									<img src="tools/captcha/captcha.php" class="captcha-img" alt="Verification" width="200" height="70" />
+									<img src="images/refresh.png" class="change-captcha" alt="Change Text" title="Change Text" width="16" height="16" />
+									<br /><input class="aweform captcha autocomplete-off" type="text" id="verify" name="verify" />
+								</div>								
+							</div>  
+						</div>
+						
+						<div class="form-submit">
+							<button type="submit" id="submit" name="submit">Submit</button>   
+						</div>
+						
+					</form>
+					
+				</div>
+				
+			</div>
+			
+		</div>
+		<!--
+		#########################################
+			- Ajax Contact Form / End -
+		#########################################
+		-->
+			
+            </div>
+            <!-- end main -->
+            
+            <!-- begin sidebar -->
+            <div class="four columns sidebar">
+                <h4 class="headline">Contact Info</h4>
+                		<ul class="list contact" style="margin-bottom: 15px;">
+						  <li class="contact-address"><em class="fa fa-map-marker"></em><span>65-1111a&nbsp;Mamalahoa Hwy</span></li>
+						  <li class="contact-address"><span>Kamuela, Hi 96743 </span></li>
+						  <li class="contact-mail"><em class="fa fa-envelope"></em><a class="link" href="mailto:simon7@waimeafirst.com">kurt.simon@voyagewaimea.com</a></li>
+							<li class="contact-phone"><em class="fa fa-phone"></em><span>+1 (808) 319-0244</span></li>
+							<li class="contact-address"><em class="fa fa-clock-o"><br>
+							  </em><span> Sunday: 10 AM</span> </li>
+						</ul>
+            </div>
+            <!-- end sidebar -->
+				
+            <div class="clearfix"></div>
+				
+</div><!-- container -->
+
+	<footer class="footer">
+    <div class="container">
+	<div class="footer-top clearfix">
+	<div class="four columns">
+	<h3>About Us</h3>
+	<p>Creating spaces and eviroments that allow us to intersect and connect...<a href="about_us.html">More</a> </p>
+	</div>
+	<div class="four columns">
+						
+						
+</div>
+<div class="four columns">
+<h3>Current events</h3>
+						<iframe src="https://www.google.com/calendar/embed?height=200&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=r2m6b65r1i35at3kinctme1p44%40group.calendar.google.com&amp;color=%238C500B&amp;ctz=Pacific%2FHonolulu" style=" border-width:0 " width="200" height="200" frameborder="0" scrolling="no"></iframe>
+                        </div>
+<div class="four columns">
+						<h3>Contact Information</h3>
+						<ul class="list contact" style="margin-bottom: 15px;">
+						  <li class="contact-address"><em class="fa fa-map-marker"></em><span>65-1111a&nbsp;Mamalahoa Hwy</span></li>
+						  <li class="contact-address"><span>Kamuela, Hi 96743 </span></li>
+						  <li class="contact-mail"><em class="fa fa-envelope"></em><a class="link" href="mailto:kurt.simon@voyagewaimea.com">kurt.simon@voyagewaimea.com</a></li>
+							<li class="contact-phone"><em class="fa fa-phone"></em><span>+1 (808) 319-0244</span></li>
+							<li class="contact-address"><em class="fa fa-clock-o"><br>
+							  </em><span> Sunday: 10 AM</span> </li>
+						</ul>
+		
+<div class="tooltips">			
+			<ul class="social-icons-footer">
+				<li><a href="https://www.facebook.com/voyageHI?fref=ts" data-rel="tooltip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+				<li><a href="#" data-rel="tooltip" title="RSS"><i class="fa fa-rss"></i></a></li>
+			</ul>
+</div>
+
+</div>
+	</div><!-- footer-top -->
+	</div>
+
+	<div class="container">
+	<div class="footer-bottom clearfix">
+	<div class="eight columns">
+	<p>Copyright &copy; 2014 <a href="#">alphawd, Voyage Ministries, and Jamison Whitehill</a>. All Rights Reserved.</p>
+	</div>
+	<div class="eight columns">
+	<nav class="footer-nav">
+<ul>
+<li>
+<a class="first" href="index.html">Home</a>
+/
+</li>
+<li>
+<a href="about_us.html">About</a>
+/
+</li>
+<li>
+<a href="narrative.html">Narrative</a>
+/
+</li>
+<li>
+<a href="events.html">Events</a>
+/
+</li>
+<li>
+<a href="contact.html">Contact</a>
+</li>
+</ul>
+</nav>
+</div>
+</div><!-- footer-bottom -->
+</div>
+	
+</footer><!-- footer -->
+
+<!-- End Document
+================================================== -->
+</body>
+</html>
